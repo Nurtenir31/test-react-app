@@ -1,20 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import MainRoutes from './Routes';
+import Navbar from './components/NavBar/Navbar'
+
+import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+    <div className="app">
+              {/* {Navbar} */}
+              <Navbar/>
 
-      </header>
-    </div>
+             {/* {Inner container} */}
+             <MainRoutes />
+      </div>
   );
 }
 
